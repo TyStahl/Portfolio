@@ -29,8 +29,18 @@ app.use(express.static(reactStaticDir));
 app.use(express.static(uploadsStaticDir));
 app.use(express.json());
 
-app.get('/api/projects', (req, res) => {
-  res.json({ message: 'Hello, World!' });
+app.get('/api/projects', async (req, res) => {
+  try {
+    const sql = `
+    select *
+    from "projects"
+    `;
+    const result = await db.query(sql);
+
+    res.json(result.rows);
+  } catch (err) {
+    throw new ClientError(400, 'unsuccessful request');
+  }
 });
 
 /*
