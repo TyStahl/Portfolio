@@ -9,3 +9,10 @@
 --      ('Learn to code', false),
 --      ('Build projects', false),
 --      ('Get a job', false);
+
+
+insert into "projects"
+("name", "imageUrl", "githubUrl", "domainUrl")
+values
+('CastingRecall', 'imageUrl', 'githubUrl', 'domainUrl'),
+('DgExpo', 'imageUrl', 'githubUrl', 'domainUrl')
