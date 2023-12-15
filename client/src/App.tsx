@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import { Projects } from './Projects';
 
 export default function App() {
@@ -20,8 +19,8 @@ export default function App() {
 
   return (
     <>
-      <h1>{serverData}</h1>
-      <div>
+      <h1 className="text-center">{serverData}</h1>
+      <div className="flex flex-wrap justify-center">
         <Projects />
       </div>
     </>
