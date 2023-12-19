@@ -14,5 +14,5 @@
 insert into "projects"
 ("name", "imageUrl", "githubUrl", "domainUrl")
 values
-('CastingRecall', 'images/Casting_Recall_Image.png', 'https://github.com/TyStahl/Casting-Recall', 'https://tystahl.github.io/Casting-Recall/'),
-('DgExpo', 'images/Disc_Expo_Image.png', 'https://github.com/TyStahl/dgExpo', 'http://dgexpo-dev.us-west-1.elasticbeanstalk.com/')
+('CastingRecall', '/images/CastingRecall.png', 'https://github.com/TyStahl/Casting-Recall', 'https://tystahl.github.io/Casting-Recall/'),
+('DgExpo', '/images/DiscExpo.png', 'https://github.com/TyStahl/dgExpo', 'http://dgexpo-dev.us-west-1.elasticbeanstalk.com/')
