@@ -15,7 +15,9 @@ export function Projects({ project }: ProjectProps) {
   return (
     <div className="border-2 rounded w-3/4">
       <h1>{name}</h1>
-      <img src={imageUrl} alt="project name" />
+      <div>
+        <img src={imageUrl} alt="project name"></img>
+      </div>
       <div className="bg-red-200 flex justify-around">
         <a className="w-1/3 border-2 rounded text-center" href={githubUrl}>
           Github
